@@ -22,7 +22,7 @@ class PortfolioItem {
         console.log("element => ", element);
 
         if (this.classes.length === 0) {
-            this.element = ['col-lg-4', 'tcol-md-6', 'portfolio-item', 'filter-app']
+            this.element = ['col-lg-4', 'col-md-6', 'portfolio-item', 'filter-app']
             for (let i = 0; i < this.element.length; i++) {
 
                 element.classList.add(this.element[i])
