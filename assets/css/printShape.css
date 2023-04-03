@@ -1,0 +1,64 @@
+:root {
+    /* color */
+    --color0: hsl(229, 57%, 11%);
+    --color0Trans: hsl(229, 57%, 11%, 0.85);
+    --color1: hsl(228, 56%, 26%);
+    --color2: hsl(243, 100%, 93%);
+    --color3: hsl(229, 7%, 55%);
+    --color4: hsl(230, 55%, 18%);
+    --color5: hsl(0, 0%, 100%);
+    /* gradient */
+    --gradient: linear-gradient(90deg, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 100%);
+    /* font size */
+    --fontSize: 14px;
+    /* font weight */
+    --regularFont: 400;
+    --boldFont: 700;
+}
+
+
+.printShape {
+    background-color: var(--color1);
+    /* padding: 5px; */
+    border-radius: 4px 4px 0px;
+    width: 50px;
+    height: 20px;
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: left;
+    text-align: center;
+    position: relative;
+    top: -35px;
+    right: 10px;
+    transform: translateY(-70%);
+    margin-top: 50px;
+    color: white;
+}
+
+.printShape::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border: solid 15px;
+    border-color: transparent var(--color1) transparent transparent;
+    /* position */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(50%);
+}
+
+.text-info {
+    color: var(--color0);
+    font-size: 18px;
+    font-weight: var(--boldFont);
+    padding-left: 5px;
+}
+
+.prot {
+    color: var(--color3);
+    /* margin-left: 7px; */
+    font-size: 16px;
+    font-weight: var(--boldFont);
+    /* letter-spacing: 1px; */
+}
