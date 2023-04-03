@@ -40,7 +40,8 @@
     width: 0;
     height: 0;
     border: solid 15px;
-    border-color: transparent var(--color1) transparent transparent;
+    /* border-color: transparent var(--color1) transparent transparent; */
+    border-color: transparent #1a69df transparent transparent;
     /* position */
     position: absolute;
     right: 0;

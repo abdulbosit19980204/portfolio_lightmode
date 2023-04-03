@@ -5,8 +5,9 @@ let printShape = document.querySelectorAll('.printShape')
 let skillProgressWrap = +document.querySelector('.progress-bar-wrap').clientWidth
 
 
-console.log(printShape);
+console.log("printShape => ",printShape);
 console.log("skilp width = ",skillProgressWrap);
+
 function skillval() {
     
     for(let i = 0; i<printShape.length; i++){
@@ -16,8 +17,11 @@ function skillval() {
             console.log(rightPosition)
             if (pariavalNow > 70) {
                 // printShape[i].style.backgroundColor = '#0000FF'
-                printShape[i].style.backgroundColor = '#1100FF'
+                printShape[i].style.backgroundColor = '#0000FF'
                 printShape[i].style.right =rightPosition+"px"
+
+               
+
 
             } else if ((pariavalNow > 30) && (pariavalNow <= 70)) {
                 printShape[i].style.backgroundColor = '#0044FF'
@@ -29,6 +33,8 @@ function skillval() {
             }
         }
            }
+
+         
     
 }
 skillval()
