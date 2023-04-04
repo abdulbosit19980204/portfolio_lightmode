@@ -33,13 +33,19 @@
     transform: translateY(-70%);
     margin-top: 50px;
     color: white;
+    box-shadow: 0px 0px 10px 2px rgba(35, 86, 255, 0.3);
 }
 
+.printShape:hover{
+    transform: scale(1.1);
+    top:-55px;
+}
 .printShape::before {
     content: '';
     width: 0;
     height: 0;
     border: solid 15px;
+    border-radius: 5px;
     /* border-color: transparent var(--color1) transparent transparent; */
     border-color: transparent #1a69df transparent transparent;
     /* position */
@@ -47,6 +53,7 @@
     right: 0;
     bottom: 0;
     transform: translateY(50%);
+    /* box-shadow: 0px 0px 10px 2px rgba(35, 86, 255, 0.13); */
 }
 
 .text-info {

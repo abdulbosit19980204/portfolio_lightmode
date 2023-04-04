@@ -19,6 +19,7 @@ function skillval() {
                 // printShape[i].style.backgroundColor = '#0000FF'
                 printShape[i].style.backgroundColor = '#0000FF'
                 printShape[i].style.right =rightPosition+"px"
+               
 
                
 
