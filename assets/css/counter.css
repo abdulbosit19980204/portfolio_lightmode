@@ -18,6 +18,11 @@
     box-shadow: 0px 0px 10px 2px rgba(35, 86, 255, 0.13);
     border-radius: 5px;
 }
+.count-box:hover{
+    background-color: rgba(0, 255, 136, 0.03);
+    /* background-color: rgba(255, 238, 0, 0.03); */
+    /* background-color: rgba(255, 0, 0, 0.03); */
+}
 
 .counts .count-box i {
     position: absolute;
@@ -31,6 +36,10 @@
     border-radius: 50px;
     line-height: 0;
     box-shadow: 0px 0px 10px 2px rgba(35, 86, 255, 0.13);
+}
+.count-box:hover i{
+    background-color: white;
+    border: 1px solid rgb(47, 255, 0, 0.3);
 }
 
 .counts .count-box span {
