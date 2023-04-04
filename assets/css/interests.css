@@ -59,8 +59,8 @@
 
 .interest-section-title h2::after {
   content: "";
-  width: 120px;
-  height: 4px;
+  width: 100px;
+  height: 3px;
   display: inline-block;
   background: #4ceb95;
   margin: 2px 10px;
