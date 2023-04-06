@@ -1,0 +1,33 @@
+{
+    "projects": [{
+            "src": "assets/img/por.png",
+            "alt": "5-project",
+            "iconClass": "bi-person-bounding-box",
+            "titleHref": "#",
+            "title": "Portfolio",
+            "createdAt": "01 Januar, 2023",
+            "onCreated": "Tashkent",
+            "desc": "This is my portfolio website. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptates nisi veritatis ex rerum dicta autem expedita impedit quos atque in aut, dolore officia soluta! In dolore quam iusto necessitatibus",
+            "btnGitHref": "https://github.com/abdulbosit19980204/portifolio",
+            "btnYoutubeHref": "#",
+            "btnWebHref": "https://abdulbositt.netlify.app/"
+
+        },
+        {
+            "src": "assets/img/otesst.webp",
+            "alt": "2-project",
+            "iconClass": "bi-card-checklist",
+            "titleHref": "#",
+            "title": "Online Test Platform",
+            "createdAt": "25 October, 2021",
+            "onCreated": "AndQXAI",
+            "desc": "This project is designed to monitor the knowledge of institute students and qualified faculty members. If you want to find more information",
+            "btnGitHref": "https://github.com/abdulbosit19980204/VeralSoftDesign",
+            "btnYoutubeHref": "https://www.youtube.com/watch?v=q0WBYdUxltk",
+            "btnWebHref": "http://yakuniy.andqxai.uz/home"
+
+        }
+
+    ],
+    "request": []
+}

@@ -120,3 +120,5 @@ new Projects(
     '.services .row'
 
 ).render()
+
+fetch('db.json').then(data => data.json()).then(res => console.log(res))
