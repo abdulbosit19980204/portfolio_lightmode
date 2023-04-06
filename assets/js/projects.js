@@ -19,6 +19,7 @@ class Projects {
 
     render() {
         const element = document.createElement('div')
+        console.log(this.classes.length);
         if (this.classes.length === 0) {
             this.element = ['col-lg-4', 'col-md-6', 'd-flex', 'align-items-stretch']
             for (let i = 0; i < this.element.length; i++) {
@@ -66,27 +67,27 @@ async function getProjectsRecource(url) {
     return await res.json()
 }
 
-getProjectsRecource('db.json').then((data) => {
-    console.log("data => ", data);
+getProjectsRecource('http://localhost:3000/projects').then((data) => {
     data.forEach(obj => {
         new Projects(
-            obj.src,
-            obj.alt,
+
+            obj.imgsrc,
+            obj.imgalt,
             obj.iconClass,
             obj.titleHref,
+            obj.title,
             obj.createdAt,
             obj.onCreated,
             obj.desc,
             obj.btnGitHref,
             obj.btnYoutubeHref,
             obj.btnWebHref,
-            ".services .row"
-
+            obj.parent
         ).render()
     })
 })
 
-// fetch('db.json').then(data => data.json()).then(res => console.log(res))
+// fetch('http://localhost:3000/projects').then(data => data.json()).then(res => console.log("res-db.json => ", res))
 
 new Projects(
     "assets/img/por.png",

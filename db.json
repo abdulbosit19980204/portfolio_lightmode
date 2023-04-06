@@ -1,7 +1,7 @@
 {
     "projects": [{
-            "src": "assets/img/por.png",
-            "alt": "5-project",
+            "imgsrc": "assets/img/por.png",
+            "imgalt": "5-project",
             "iconClass": "bi-person-bounding-box",
             "titleHref": "#",
             "title": "Portfolio",
@@ -10,12 +10,12 @@
             "desc": "This is my portfolio website. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptates nisi veritatis ex rerum dicta autem expedita impedit quos atque in aut, dolore officia soluta! In dolore quam iusto necessitatibus",
             "btnGitHref": "https://github.com/abdulbosit19980204/portifolio",
             "btnYoutubeHref": "#",
-            "btnWebHref": "https://abdulbositt.netlify.app/"
-
+            "btnWebHref": "https://abdulbositt.netlify.app/",
+            "parent": ".services .row"
         },
         {
-            "src": "assets/img/otesst.webp",
-            "alt": "2-project",
+            "imgsrc": "assets/img/otesst.webp",
+            "imgalt": "2-project",
             "iconClass": "bi-card-checklist",
             "titleHref": "#",
             "title": "Online Test Platform",
@@ -24,10 +24,65 @@
             "desc": "This project is designed to monitor the knowledge of institute students and qualified faculty members. If you want to find more information",
             "btnGitHref": "https://github.com/abdulbosit19980204/VeralSoftDesign",
             "btnYoutubeHref": "https://www.youtube.com/watch?v=q0WBYdUxltk",
-            "btnWebHref": "http://yakuniy.andqxai.uz/home"
+            "btnWebHref": "http://yakuniy.andqxai.uz/home",
+            "parent": ".services .row"
 
+        },
+        {
+            "imgsrc": "assets/img/how-ecommerce-works.png",
+            "imgalt": "5-project",
+            "iconClass": "bi-cart4",
+            "titleHref": "#",
+            "title": "E-commerce",
+            "createdAt": "01 Januar, 2023",
+            "onCreated": "Tashkent",
+            "desc": "This is my portfolio website. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptates nisi veritatis ex rerum dicta autem expedita impedit quos atque in aut, dolore officia soluta! In dolore quam iusto necessitatibus",
+            "btnGitHref": "https://github.com/abdulbosit19980204/portifolio",
+            "btnYoutubeHref": "#",
+            "btnWebHref": "https://abdulbositt.netlify.app/",
+            "parent": ".services .row"
         }
 
+    ],
+    "portfolio": [{
+            "filter": "filter-app",
+            "imgsrc": "assets/img/portfolio/13_page-0001.jpg",
+            "alt": "1-rasm",
+            "name": "Faxriy Yorliq",
+            "desc": "Tafakkur Sinovlari",
+            "hrefImg": "assets/img/portfolio/13_page-0001.jpg",
+            "dataGallery": "portfolioGallery",
+            "titleImg": "Republic",
+            "hrefPortfPage": "portfolio-details.html",
+            "titlePage": "More Details",
+            "parent": ".portfolio-container"
+        },
+        {
+            "filter": "filter-app",
+            "imgsrc": "assets/img/portfolio/8_page-0001.jpg",
+            "alt": "1-rasm",
+            "name": "Faxriy Yorliq",
+            "desc": "Tafakkur Sinovlari",
+            "hrefImg": "assets/img/portfolio/13_page-0001.jpg",
+            "dataGallery": "portfolioGallery",
+            "titleImg": "Republic",
+            "hrefPortfPage": "portfolio-details.html",
+            "titlePage": "More Details",
+            "parent": ".portfolio-container"
+        },
+        {
+            "filter": "filter-app",
+            "imgsrc": "assets/img/portfolio/12_page-0001.jpg",
+            "alt": "1-rasm",
+            "name": "Faxriy Yorliq",
+            "desc": "Tafakkur Sinovlari",
+            "hrefImg": "assets/img/portfolio/13_page-0001.jpg",
+            "dataGallery": "portfolioGallery",
+            "titleImg": "Republic",
+            "hrefPortfPage": "portfolio-details.html",
+            "titlePage": "More Details",
+            "parent": ".portfolio-container"
+        }
     ],
     "request": []
 }

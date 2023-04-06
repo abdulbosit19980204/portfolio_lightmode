@@ -36,12 +36,12 @@ class PortfolioItem {
 
         element.innerHTML = `
             <div class="portfolio-wrap">
-                    <img src=${this.src} class="img-fluid" alt=${this.alt}>
+                    <img src=${encodeURI(this.src)} class="img-fluid" alt=${this.alt}>
                 <div class="portfolio-info">
                     <h4>${this.name} 1</h4>
                     <p>${this.desc}</p>
                     <div class="portfolio-links">
-                        <a href=${this.hrefImg} data-gallery=${this.dataGallery} class="portfolio-lightbox" title=${this.titleImg}><i class="bx bx-plus"></i></a>
+                        <a href=${encodeURI(this.hrefImg)} data-gallery=${this.dataGallery} class="portfolio-lightbox" title=${this.titleImg}><i class="bx bx-plus"></i></a>
                         <a href=${this.hrefPortfPage} title=${this.titlePage} ><i class="bx bx-link"></i></a>
                     </div>
                 </div>
@@ -53,13 +53,36 @@ class PortfolioItem {
 
 }
 
+async function getPortfolioRecurce(url) {
+    const res = await fetch(url)
+    return await res.json()
+}
+
+getPortfolioRecurce('http://localhost:3000/portfolio').then(data => {
+    data.forEach(obj => {
+        new PortfolioItem(
+            obj.filter,
+            obj.imgsrc,
+            obj.alt,
+            obj.name,
+            obj.desc,
+            obj.hrefImg,
+            obj.dataGallery,
+            obj.titleImg,
+            obj.hrefPortfPage,
+            obj.titlePage,
+            obj.parent
+        ).render()
+    })
+})
+
 new PortfolioItem(
     'filter-app',
-    encodeURI('assets/img/portfolio/13_page-0001.jpg'),
+    'assets/img/portfolio/13_page-0001.jpg',
     '1-rasm',
     'Faxriy Yorliq',
     'Tafakkur Sinovlari',
-    encodeURI('assets/img/portfolio/13_page-0001.jpg'),
+    'assets/img/portfolio/13_page-0001.jpg',
     'portfolioGallery',
     "Republic",
     "portfolio-details.html",
@@ -70,11 +93,11 @@ new PortfolioItem(
 
 new PortfolioItem(
     'filter-app',
-    encodeURI('assets/img/portfolio/Reference Letter 1.pdf_page-0001.jpg'),
+    'assets/img/portfolio/Reference Letter 1.pdf_page-0001.jpg',
     '1-rasm',
     'Recomendation Letter',
     'By Xolmatov Turgunboy',
-    encodeURI('assets/img/portfolio/Reference Letter 1.pdf_page-0001.jpg'),
+    'assets/img/portfolio/Reference Letter 1.pdf_page-0001.jpg',
     'portfolioGallery',
     "Recomendation",
     "portfolio-details.html",
@@ -86,11 +109,11 @@ new PortfolioItem(
 
 new PortfolioItem(
     'filter-card',
-    encodeURI("assets/img/portfolio/12_page-0001.jpg"),
+    "assets/img/portfolio/12_page-0001.jpg",
     '2-rasm',
     'Faxriy Yorliq',
     'Akademik Litseydan',
-    encodeURI("assets/img/portfolio/12_page-0001.jpg"),
+    "assets/img/portfolio/12_page-0001.jpg",
     'portfolioGallery',
     "Academic",
     "portfolio-details.html",
@@ -102,11 +125,11 @@ new PortfolioItem(
 
 new PortfolioItem(
     'filter-web',
-    encodeURI("assets/img/portfolio/8_page-0001.jpg"),
+    "assets/img/portfolio/8_page-0001.jpg",
     '2-rasm',
     'Faxriy Yorliq',
     'school',
-    encodeURI("assets/img/portfolio/8_page-0001.jpg"),
+    "assets/img/portfolio/8_page-0001.jpg",
     'portfolioGallery',
     "School",
     "portfolio-details.html",
@@ -118,11 +141,11 @@ new PortfolioItem(
 
 new PortfolioItem(
     'filter-web',
-    encodeURI("assets/img/portfolio/10_page-0001.jpg"),
+    "assets/img/portfolio/10_page-0001.jpg",
     '2-rasm',
     'Faxriy Yorliq',
     'Fan Olimpiyada',
-    encodeURI("assets/img/portfolio/10_page-0001.jpg"),
+    "assets/img/portfolio/10_page-0001.jpg",
     'portfolioGallery',
     "School",
     "portfolio-details.html",
@@ -134,11 +157,11 @@ new PortfolioItem(
 
 new PortfolioItem(
     'filter-web',
-    encodeURI("assets/img/portfolio/11_page-0001.jpg"),
+    "assets/img/portfolio/11_page-0001.jpg",
     '2-rasm',
     'Faxriy Yorliq',
     'Fan Olimpiyada',
-    encodeURI("assets/img/portfolio/11_page-0001.jpg"),
+    "assets/img/portfolio/11_page-0001.jpg",
     'portfolioGallery',
     "School",
     "portfolio-details.html",
