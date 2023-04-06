@@ -67,7 +67,7 @@ async function getProjectsRecource(url) {
     return await res.json()
 }
 
-getProjectsRecource('http://localhost:3000/projects').then((data) => {
+getProjectsRecource('https://my-json-server.typicode.com/abdulbosit19980204/portfolio_lightmode/projects').then((data) => {
     data.forEach(obj => {
         new Projects(
 
@@ -88,7 +88,7 @@ getProjectsRecource('http://localhost:3000/projects').then((data) => {
 })
 
 // fetch('http://localhost:3000/projects').then(data => data.json()).then(res => console.log("res-db.json => ", res))
-
+/*
 new Projects(
     "assets/img/por.png",
     "5-project",
@@ -148,3 +148,4 @@ new Projects(
     '.services .row'
 
 ).render()
+*/

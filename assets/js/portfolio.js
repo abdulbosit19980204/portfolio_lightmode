@@ -58,115 +58,116 @@ async function getPortfolioRecurce(url) {
     return await res.json()
 }
 
-getPortfolioRecurce('http://localhost:3000/portfolio').then(data => {
-    data.forEach(obj => {
-        new PortfolioItem(
-            obj.filter,
-            obj.imgsrc,
-            obj.alt,
-            obj.name,
-            obj.desc,
-            obj.hrefImg,
-            obj.dataGallery,
-            obj.titleImg,
-            obj.hrefPortfPage,
-            obj.titlePage,
-            obj.parent
-        ).render()
+getPortfolioRecurce('https://my-json-server.typicode.com/abdulbosit19980204/portfolio_lightmode/projects').then(data => {
+        data.forEach(obj => {
+            new PortfolioItem(
+                obj.filter,
+                obj.imgsrc,
+                obj.alt,
+                obj.name,
+                obj.desc,
+                obj.hrefImg,
+                obj.dataGallery,
+                obj.titleImg,
+                obj.hrefPortfPage,
+                obj.titlePage,
+                obj.parent
+            ).render()
+        })
     })
-})
+    /*
+    new PortfolioItem(
+        'filter-app',
+        'assets/img/portfolio/13_page-0001.jpg',
+        '1-rasm',
+        'Faxriy Yorliq',
+        'Tafakkur Sinovlari',
+        'assets/img/portfolio/13_page-0001.jpg',
+        'portfolioGallery',
+        "Republic",
+        "portfolio-details.html",
+        "More Details",
+        ".portfolio-container",
+        'col-lg-4', 'col-md-6', 'portfolio-item', 'filter-app'
+    ).render()
 
-new PortfolioItem(
-    'filter-app',
-    'assets/img/portfolio/13_page-0001.jpg',
-    '1-rasm',
-    'Faxriy Yorliq',
-    'Tafakkur Sinovlari',
-    'assets/img/portfolio/13_page-0001.jpg',
-    'portfolioGallery',
-    "Republic",
-    "portfolio-details.html",
-    "More Details",
-    ".portfolio-container",
-    'col-lg-4', 'col-md-6', 'portfolio-item', 'filter-app'
-).render()
+    new PortfolioItem(
+        'filter-app',
+        'assets/img/portfolio/Reference Letter 1.pdf_page-0001.jpg',
+        '1-rasm',
+        'Recomendation Letter',
+        'By Xolmatov Turgunboy',
+        'assets/img/portfolio/Reference Letter 1.pdf_page-0001.jpg',
+        'portfolioGallery',
+        "Recomendation",
+        "portfolio-details.html",
+        "More Details",
+        ".portfolio-container",
+        'portfolio-item', 'col-lg-4', 'col-md-6', 'filter-app'
+        // `col-lg-4 col-md-6 portfolio-item filter-app`
+    ).render()
 
-new PortfolioItem(
-    'filter-app',
-    'assets/img/portfolio/Reference Letter 1.pdf_page-0001.jpg',
-    '1-rasm',
-    'Recomendation Letter',
-    'By Xolmatov Turgunboy',
-    'assets/img/portfolio/Reference Letter 1.pdf_page-0001.jpg',
-    'portfolioGallery',
-    "Recomendation",
-    "portfolio-details.html",
-    "More Details",
-    ".portfolio-container",
-    'portfolio-item', 'col-lg-4', 'col-md-6', 'filter-app'
-    // `col-lg-4 col-md-6 portfolio-item filter-app`
-).render()
+    new PortfolioItem(
+        'filter-card',
+        "assets/img/portfolio/12_page-0001.jpg",
+        '2-rasm',
+        'Faxriy Yorliq',
+        'Akademik Litseydan',
+        "assets/img/portfolio/12_page-0001.jpg",
+        'portfolioGallery',
+        "Academic",
+        "portfolio-details.html",
+        "More Details",
+        ".portfolio-container",
+        'col-lg-4', 'col-md-6', 'portfolio-item', 'filter-card'
 
-new PortfolioItem(
-    'filter-card',
-    "assets/img/portfolio/12_page-0001.jpg",
-    '2-rasm',
-    'Faxriy Yorliq',
-    'Akademik Litseydan',
-    "assets/img/portfolio/12_page-0001.jpg",
-    'portfolioGallery',
-    "Academic",
-    "portfolio-details.html",
-    "More Details",
-    ".portfolio-container",
-    'col-lg-4', 'col-md-6', 'portfolio-item', 'filter-card'
+    ).render()
 
-).render()
+    new PortfolioItem(
+        'filter-web',
+        "assets/img/portfolio/8_page-0001.jpg",
+        '2-rasm',
+        'Faxriy Yorliq',
+        'school',
+        "assets/img/portfolio/8_page-0001.jpg",
+        'portfolioGallery',
+        "School",
+        "portfolio-details.html",
+        "More Details",
+        ".portfolio-container",
+        'col-lg-4', 'col-md-6', 'portfolio-item', 'filter-web'
 
-new PortfolioItem(
-    'filter-web',
-    "assets/img/portfolio/8_page-0001.jpg",
-    '2-rasm',
-    'Faxriy Yorliq',
-    'school',
-    "assets/img/portfolio/8_page-0001.jpg",
-    'portfolioGallery',
-    "School",
-    "portfolio-details.html",
-    "More Details",
-    ".portfolio-container",
-    'col-lg-4', 'col-md-6', 'portfolio-item', 'filter-web'
+    ).render()
 
-).render()
+    new PortfolioItem(
+        'filter-web',
+        "assets/img/portfolio/10_page-0001.jpg",
+        '2-rasm',
+        'Faxriy Yorliq',
+        'Fan Olimpiyada',
+        "assets/img/portfolio/10_page-0001.jpg",
+        'portfolioGallery',
+        "School",
+        "portfolio-details.html",
+        "More Details",
+        ".portfolio-container",
+        'col-lg-4', 'col-md-6', 'portfolio-item', 'filter-web'
 
-new PortfolioItem(
-    'filter-web',
-    "assets/img/portfolio/10_page-0001.jpg",
-    '2-rasm',
-    'Faxriy Yorliq',
-    'Fan Olimpiyada',
-    "assets/img/portfolio/10_page-0001.jpg",
-    'portfolioGallery',
-    "School",
-    "portfolio-details.html",
-    "More Details",
-    ".portfolio-container",
-    'col-lg-4', 'col-md-6', 'portfolio-item', 'filter-web'
+    ).render()
 
-).render()
+    new PortfolioItem(
+        'filter-web',
+        "assets/img/portfolio/11_page-0001.jpg",
+        '2-rasm',
+        'Faxriy Yorliq',
+        'Fan Olimpiyada',
+        "assets/img/portfolio/11_page-0001.jpg",
+        'portfolioGallery',
+        "School",
+        "portfolio-details.html",
+        "More Details",
+        ".portfolio-container",
+        'col-lg-4', 'col-md-6', 'portfolio-item', 'filter-web'
 
-new PortfolioItem(
-    'filter-web',
-    "assets/img/portfolio/11_page-0001.jpg",
-    '2-rasm',
-    'Faxriy Yorliq',
-    'Fan Olimpiyada',
-    "assets/img/portfolio/11_page-0001.jpg",
-    'portfolioGallery',
-    "School",
-    "portfolio-details.html",
-    "More Details",
-    ".portfolio-container",
-    'col-lg-4', 'col-md-6', 'portfolio-item', 'filter-web'
-
-).render()
+    ).render()
+    */
