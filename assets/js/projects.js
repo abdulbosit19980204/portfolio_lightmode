@@ -61,6 +61,33 @@ class Projects {
 
 }
 
+async function getProjectsRecource(url) {
+    const res = await fetch(url)
+    return await res.json()
+}
+
+getProjectsRecource('db.json').then((data) => {
+    console.log("data => ", data);
+    data.forEach(obj => {
+        new Projects(
+            obj.src,
+            obj.alt,
+            obj.iconClass,
+            obj.titleHref,
+            obj.createdAt,
+            obj.onCreated,
+            obj.desc,
+            obj.btnGitHref,
+            obj.btnYoutubeHref,
+            obj.btnWebHref,
+            ".services .row"
+
+        ).render()
+    })
+})
+
+// fetch('db.json').then(data => data.json()).then(res => console.log(res))
+
 new Projects(
     "assets/img/por.png",
     "5-project",
@@ -120,5 +147,3 @@ new Projects(
     '.services .row'
 
 ).render()
-
-fetch('db.json').then(data => data.json()).then(res => console.log(res))

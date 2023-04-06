@@ -19,7 +19,7 @@ class PortfolioItem {
 
     render() {
         const element = document.createElement('div')
-        console.log("element => ", element);
+            // console.log("element => ", element);
 
         if (this.classes.length === 0) {
             this.element = ['col-lg-4', 'col-md-6', 'portfolio-item', 'filter-app']
