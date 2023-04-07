@@ -1,33 +1,37 @@
 {
-    "name": "portfolio_lightmode",
-    "version": "1.0.0",
-    "description": "My portfolio web site for light mode",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/abdulbosit19980204/portfolio_lightmode.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/abdulbosit19980204/portfolio_lightmode/issues"
-    },
-    "homepage": "https://github.com/abdulbosit19980204/portfolio_lightmode#readme",
-    "devDependencies": {
-        "aos": "^2.3.4",
-        "bootstrap": "^5.2.3",
-        "bootstrap-icons": "^1.10.4",
-        "glightbox": "^3.2.0",
-        "isotope-layout": "^3.0.6",
-        "json-server": "^0.17.3",
-        "php": "^1.0.2",
-        "swiper": "^9.2.0",
-        "typed.js": "^2.0.15"
-    },
-    "dependencies": {
-        "boxicons": "^2.1.4"
-    }
+  "name": "portfolio_lightmode",
+  "version": "1.0.0",
+  "description": "My portfolio web site for light mode",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdulbosit19980204/portfolio_lightmode.git"
+  },
+  "author": "Abdulbosit Tuychiev && Bootstrap Made",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdulbosit19980204/portfolio_lightmode/issues"
+  },
+  "homepage": "https://github.com/abdulbosit19980204/portfolio_lightmode#readme",
+  "devDependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.4",
+    "glightbox": "^3.2.0",
+    "isotope-layout": "^3.0.6",
+    "json-server": "^0.17.3",
+    "php": "^1.0.2",
+    "swiper": "^9.2.0",
+    "typed.js": "^2.0.15"
+  },
+  "dependencies": {
+    "boxicons": "^2.1.4"
+  },
+  "keywords": [
+    "portfolio",
+    "abdulbosit"
+  ]
 }
