@@ -58,7 +58,7 @@ async function getPortfolioRecurce(url) {
     return await res.json()
 }
 
-getPortfolioRecurce('https://my-json-server.typicode.com/abdulbosit19980204/portfolio_lightmode/projects').then(data => {
+getPortfolioRecurce('https://my-json-server.typicode.com/abdulbosit19980204/portfolio_lightmode/portfolio').then(data => {
         data.forEach(obj => {
             new PortfolioItem(
                 obj.filter,
