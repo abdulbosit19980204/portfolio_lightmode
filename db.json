@@ -41,6 +41,20 @@
             "btnYoutubeHref": "#",
             "btnWebHref": "https://abdulbositt.netlify.app/",
             "parent": ".services .row"
+        },
+            {
+            "imgsrc": "assets/img/how-ecommerce-works.png",
+            "imgalt": "5-project",
+            "iconClass": "bi-cart4",
+            "titleHref": "#",
+            "title": "E-commerce",
+            "createdAt": "01 Januar, 2023",
+            "onCreated": "Tashkent",
+            "desc": "This is my portfolio website. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptates nisi veritatis ex rerum dicta autem expedita impedit quos atque in aut, dolore officia soluta! In dolore quam iusto necessitatibus",
+            "btnGitHref": "https://github.com/abdulbosit19980204/portifolio",
+            "btnYoutubeHref": "#",
+            "btnWebHref": "https://abdulbositt.netlify.app/",
+            "parent": ".services .row"
         }
 
     ],
